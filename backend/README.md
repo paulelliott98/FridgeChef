@@ -8,7 +8,7 @@ backend/
 │   │   └── v1/
 │   │       └── routes/
 │   │           ├── auth.py
-│   │           ├── pantry.py
+│   │           ├── inventory.py
 │   │           ├── recipes.py
 │   │           └── groceries.py
 │   ├── db/
@@ -17,18 +17,18 @@ backend/
 │   │   └── init_db.py
 │   ├── models/
 │   │   ├── user.py
-│   │   ├── pantry_item.py
+│   │   ├── inventory.py
 │   │   ├── recipe.py
 │   │   ├── ingredient.py
 │   │   ├── grocery_list.py
 │   │   └── __init__.py
 │   ├── schemas/
 │   │   ├── user.py
-│   │   ├── pantry_item.py
+│   │   ├── inventory.py
 │   │   ├── recipe.py
 │   │   └── ...
 │   ├── services/
-│   │   ├── pantry_service.py
+│   │   ├── inventory_service.py
 │   │   ├── recipe_service.py
 │   │   └── grocery_service.py
 │   └── dependencies.py
