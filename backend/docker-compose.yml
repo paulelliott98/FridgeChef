@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:18
+    container_name: fridgechef-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fridgechef
+      POSTGRES_PASSWORD: letmein
+      POSTGRES_DB: fridgechef
+    ports:
+      - "5432:5432"
+    volumes:
+      - fridgechef_pgdata:/var/lib/postgresql
+
+volumes:
+  fridgechef_pgdata:
